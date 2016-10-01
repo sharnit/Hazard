@@ -13,7 +13,7 @@ function loadJSONDoc() {
 
     var xhttp = new XMLHttpRequest();
 
-    xhttp.open("GET", "https://api.reliefweb.int/v1/disasters?appname=apidoc&filter[field]=country&filter[value]=India&query[value]=" + selectControl.options[s].text + "&sort[]=date:asc&fields[include][]=url_alias&profile=minimal&limit=20", true);
+    xhttp.open("GET", "https://api.reliefweb.int/v1/disasters?appname=apidoc&filter[field]=country&filter[value]=India&query[value]=" + selectControl.options[s].text + "&sort[]=date:desc&fields[include][]=url_alias&profile=minimal&limit=20", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function () {
